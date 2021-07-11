@@ -10,8 +10,8 @@ def determine_character_press(time):
     
 def morse_to_character(morse_input):
     for char in chars:
-        if morse_input == chars[char]:
-            print(f"converted {morse_input} to {char}")
-            return char
+        if morse_input == char:
+            print(f"converted {morse_input} to {chars[char]}")
+            return chars[char]
         
     return False  # only called if no match is found
